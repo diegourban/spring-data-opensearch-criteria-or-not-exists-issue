@@ -1,0 +1,9 @@
+services:
+  opensearch:
+    image: opensearchproject/opensearch:3.5.0
+    environment:
+      - discovery.type=single-node
+      - DISABLE_SECURITY_PLUGIN=true
+      - OPENSEARCH_INITIAL_ADMIN_PASSWORD=admin
+    ports:
+      - "9200:9200"
