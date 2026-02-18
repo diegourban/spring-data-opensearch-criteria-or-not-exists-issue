@@ -46,11 +46,11 @@ The tests use Testcontainers to start an OpenSearch instance automatically — n
 
 ### Test Cases
 
-| Test | Description | Status |
-|------|-------------|--------|
-| `testCriteriaExistsNot` | Standalone `.exists().not()` | Passes |
-| `testCriteriaIsOrExistsNot` | `.or()` + `.exists().not()` via Criteria API | **Fails** (demonstrates the bug) |
-| `testNativeQueryIsOrMustNotExists` | Equivalent native query | Passes |
+| Test | Description | Status    |
+|------|-------------|-----------|
+| `testCriteriaExistsNot` | Standalone `.exists().not()` | Passes    |
+| `testCriteriaIsOrExistsNot` | `.or()` + `.exists().not()` via Criteria API | **Fails** |
+| `testNativeQueryIsOrMustNotExists` | Equivalent native query | Passes    |
 
 ## Running OpenSearch Locally
 
